@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
+var https = require('https');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -34,8 +35,12 @@ app.use(function(req, res, next) {
 });
 
 setInterval(function() {
-    http.get('http://hzintonation.herokuapp.com/');
+  http.get('http://hzintonation.herokuapp.com/');
+  http.get('http://independent-chef.herokuapp.com/');
 }, 300000); // every 5 minutes (300000)
+
+
+
 
 // error handler
 app.use(function(err, req, res, next) {
