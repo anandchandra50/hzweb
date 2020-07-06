@@ -37,6 +37,7 @@ app.use(function(req, res, next) {
 setInterval(function() {
   http.get('http://hzintonation.herokuapp.com/');
   http.get('http://independent-chef.herokuapp.com/');
+  http.get('https://visa-gives.herokuapp.com/');
 }, 300000); // every 5 minutes (300000)
 
 
