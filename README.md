@@ -3,7 +3,7 @@
 
 ## Official landing page for hz, the iOS intonation app.
 
-[live url](http://hzintonation.com)
+[live url](https://hzintonation.herokuapp.com/)
 
 
 ### To run locally: 
